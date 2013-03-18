@@ -1,14 +1,21 @@
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-{% include head.html %}
-<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  <header role="banner">{% include header.html %}</header>
-  <nav role="navigation">{% include navigation.html %}</nav>
-  <div id="main">
-    <div id="content">
-      {{ content | expand_urls: root_url }}
+<html>
+<head>
+    <title>M00</title>
+</head>
+<body>
+<div class="eleven columns alpha">
+    <header id="branding">
+        <a href="/">
+            <hgroup>
+                <h1 class="site-heading">Brian Scaturro</h1>
+                <h2 class="site-subheading">Fancy a dance?</h2>
+            </hgroup>
+        </a>
+    </header>
+    <div id="main" role="main">
+        {{ content }}
     </div>
-  </div>
-  <footer role="contentinfo">{% include footer.html %}</footer>
-  {% include after_footer.html %}
+</div>
+
 </body>
 </html>
