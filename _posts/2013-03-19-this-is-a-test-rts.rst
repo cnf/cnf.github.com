@@ -3,9 +3,19 @@ layout: post
 title: "test post"
 ---
 
-w00t!!
+
+====
+Title
+====
+
+- one
+- two
+
+:Version: 1.0 of 2001/08/08 
+
+`w00t!!`
 
 
-test here!
+*test* here!
 
 rst
