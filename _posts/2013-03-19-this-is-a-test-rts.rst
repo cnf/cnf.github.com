@@ -8,4 +8,4 @@ w00t!!
 
 test here!
 
-textile
+rst
